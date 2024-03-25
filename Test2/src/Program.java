@@ -94,18 +94,9 @@ public class Program {
 		System.out.println(n1 + "*" + n2 +"=" +result);
 	}
 	public static int multiply(int n1, int n2){
-		int highestNum = 0;
-		int lowerNum = 0;
-		if (n1 > n2){
-			highestNum = n1;
-			lowerNum = n2;
-		}else {
-			lowerNum = n1;
-			highestNum = n2;
-		}
 		int sum = 0;
-		for (int i = 1; i <= lowerNum; i++) {
-			sum += highestNum;
+		for (int i = 1; i <= n2; i++) {
+			sum += n1;
 		}
 		return sum;
 	}
