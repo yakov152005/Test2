@@ -4,6 +4,7 @@ public class Program {
 		Ex2();
 		Ex3();
 		Ex4A();
+		Ex4B();
 		Ex4C();
 		Ex4D();
 		Ex5();
