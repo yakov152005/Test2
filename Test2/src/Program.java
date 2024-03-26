@@ -101,6 +101,30 @@ public class Program {
 		return sum;
 	}
 	//--------------------------------------------------------------------------------------
+		public static void Ex4B(){
+		int base = 2;
+		int power = 8;
+		int result =pow(base,power);
+		System.out.println(base+"^"+power+"="+result);
+	}
+	public static int pow(int base, int power) {
+		if (power == 0) {
+			return 1;
+		}
+
+		int result = base;
+		for (int i = 1; i < power; i++) {
+			int temp = 0;
+			for (int j = 0; j < base; j++) {
+				temp += result;
+			}
+			result = temp;
+		}
+		return result;
+	}
+
+
+	//--------------------------------------------------------------------------------------
 	public static void Ex4C(){
 		int dividend =17;
 		int divisor = 3;
